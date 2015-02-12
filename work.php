@@ -13,7 +13,7 @@ include("includes/Header.php");
 		<h1 class='PortfolioH1'>Software Development</h1>
 		<h2 class='PortfolioH2'>Bespoke software developed for customers needs</h2>	
 		<p class='PortfolioP'>Over the years I have programmed in many different languages and produced various bespoke programs for clients. Below are the programs I work on in my spare time. My best single piece of software is Photon GameManager which has a small but happy base of users many of whom have complemented me on how wonderful the software is. Place your mouse over the tiles to view more about each piece of software and click on the tile to view even more information.</p>
-		<div style='margin-top:40px;width:1000px;height:190px;'>
+		<div class='PortfolioTilesContainer'>
 			<div class='mosaic-block fadeMosaic'>
 				<a style='text-decoration:none;' onclick="$.nmManual('/portfolio/photon-soft.php',{ sizes: { minW: $(window).width()*0.8, minH: $(window).height()*0.8} });" class='mosaic-overlay'>
 					<div class='mosaicdetails'>
@@ -54,7 +54,7 @@ include("includes/Header.php");
 		<h2 class='PortfolioH2'>Unique websites hand coded for clients</h2>
 		<p class='PortfolioP'>Over the years I have developed a lot of websites. Most of my websites are hand coded in a text editor and are not based on templates. Some of my websites are also build around existing platforms such as phpBB and Joomla while others are built in PHP from the ground up. Below is a selection of websites that I have made. Place your mouse over the tiles to view more about each website and click on the tile to view even more information.</p>
 	
-		<div style='margin-top:40px;width:1000px;height:380px;'>
+		<div class='PortfolioTilesContainer'>
 
 			<div class='mosaic-block fadeMosaic'>
 				<a style='text-decoration:none;' onclick="$.nmManual('portfolio/andrew.php',{ sizes: { minW: $(window).width()*0.8, minH: $(window).height()*0.8} });" class='mosaic-overlay'>
@@ -130,20 +130,13 @@ include("includes/Header.php");
 		<h1 class='PortfolioH1'>Video Editing</h1>
 		<h2 class='PortfolioH2'>A promotional video for Photon GameManager</h2>
 		<p class='PortfolioP'>The following is a video that I designed and edited to show off the full potential of my software release Photon GameManager. It is simple but effective and has helped me to increase sales of the software. Feel free to watch the finished video below.</p>
-		<div style='margin-top:40px;width:560px;margin-right:auto;margin-left:auto;'>
-			<iframe width="560" height="315" src="//www.youtube.com/embed/oKSDIxzU7f8" frameborder="0" allowfullscreen></iframe>
+		<div class='Video'>
+			<iframe width="100%" height="315" src="//www.youtube.com/embed/oKSDIxzU7f8" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 </div>
 
-<script type="text/javascript">
-var cw = (($('.mosaic-block').width())/16)*9;
-$('.mosaic-block').css({ 'height': cw + 'px' });
 
-$(window).resize(function () { var cw = (($('.mosaic-block').width())/16)*9; $('.mosaic-block').css({ 'height': cw + 'px' }); });
-
-
-</script>
 
 <?php
 include("includes/Footer.php");

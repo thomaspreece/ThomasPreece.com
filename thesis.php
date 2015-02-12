@@ -10,7 +10,7 @@ include("includes/Header.php");
 
 <div class='PortfolioDiv Colour2'>
 	<div class='InsidePortfolioDiv'>
-		<h1 class='PortfolioH1'>Masters of Mathematics Scholarly Report</h1>
+		<h1 class='PortfolioH1'>Master of Mathematics Scholarly Report</h1>
 		<h2 class='PortfolioH2'>A Look At Data Compression With a Specific Focus on Image Compression</h2>
 		<p class='PortfolioP'>As part of my Masters of Mathematics program I produced a scholarly report giving an overview of data compression and how mathematics plays a part within this field. I focused the main part of my report on image compression as I use images a lot in my work programming and never really understood the difference between different file formats and the mathematics behind them. I feel the following paragraph taken from the report sums up compression quite well and the reason why I choose to learn about it:<br/>		
 		<i>"Compression is very important in modern day life and you use it everyday without even realising. Every time you turn on a computer, most of the graphics it displays to you are stored as compressed files. When you use the internet, almost all of the data you retrieve is compressed. When you use your mobile phone, your voice is compressed before it is sent to the person on the other end. Even when you use a digital camera, the photos you take are compressed before they are stored on its memory card"</i></p>

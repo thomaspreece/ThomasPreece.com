@@ -1,5 +1,5 @@
 <?php
-$DOMAIN="http://thomaspreece.com";
+$DOMAIN="http://127.0.0.1/ThomasPreece.com";
 
 
 function auto_version($file)
@@ -29,10 +29,58 @@ echo "
 ";
 
 
-
 //Load JS
 echo "
 <script src=\"".$DOMAIN.auto_version('/scripts/jquery-1.10.2_min.js')."\"></script>
+
+<script type=\"text/javascript\">
+
+$( document ).ready(ResizeUpdater);
+
+function ResizeUpdater(){
+	var cw2 = $('.InsidePortfolioDiv').width();
+	if(cw2 < 560){
+		$('.Video').css({ 'width': cw2 + 'px' });
+
+		$('.HomeImageDiv').css({ 'width': cw2 + 'px' });
+		$('.HomeImageDiv').css({ 'overflow': 'auto' });
+		if(cw2 > 346){
+			$('.HomeImageCenterDiv').css({ 'width': '346px' });
+			$('.HomeImage').css({ 'width': '346px' });
+		}else{
+			$('.HomeImageCenterDiv').css({ 'width': cw2 + 'px' });
+			$('.HomeImage').css({ 'width': cw2 + 'px' });
+		}
+	}else{
+		$('.HomeImageDiv').css({ 'overflow': 'visible' });
+		$('.Video').css({ 'width': '560px' });
+		$('.HomeImageDiv').css({ 'width': '100%' });
+		$('.HomeImageCenterDiv').css({ 'width': '100%' }); 		
+		$('.HomeImage').css({ 'width': '346px' }); 	
+	}
+	
+	if(cw2 < 400){
+		$('.underlinemenu').css({ 'display': 'none' }); 
+		$('.dropdownunderlinemenu').css({ 'display': 'block' }); 
+	}else{
+		$('.underlinemenu').css({ 'display': 'block' }); 
+		$('.dropdownunderlinemenu').css({ 'display': 'none' }); 
+	}
+	
+	var cw = ($('.PortfolioTilesContainer').width() - 6*10)/3;
+	if(cw < 200){
+		cw = $('.PortfolioTilesContainer').width() - 20;
+	}
+	
+	ch = ((cw)/16)*9;
+	$('.mosaic-block').css({ 'width': cw + 'px' }); 
+	$('.mosaic-block').css({ 'height': ch + 'px' });
+}
+
+$(window).resize(ResizeUpdater);
+
+
+</script>
 ";
 
 
@@ -86,11 +134,8 @@ Echo "</head>
 <div class='centerBody'>
 
 <div class='underlinemenu'>
-<div style='width:1000px;margin-right:auto;margin-left:auto;'>
+<div style='max-width:1000px;margin-right:auto;margin-left:auto;'>
 <ul>
-<li class='Logo'>
-<!--<img style='height:50px;' src='".$DOMAIN."/Resources/Logo.png' />-->
-</li>
 
 <li><a href='".$DOMAIN."/contact.php' "; if($PageName=="contact.php"){echo "class='selected'";} echo ">Contact Me</a></li>
 <li><a href='".$DOMAIN."/thesis.php' "; if($PageName=="thesis.php"){echo "class='selected'";} echo ">Mathematics</a></li>
@@ -102,6 +147,26 @@ Echo "</head>
 </ul>
 </div>
 </div>
+
+<div class='dropdownunderlinemenu'>
+	<div style='width:100%;height:100%'><a class='NavigationButton' href='#'>Navigation</a>
+		<ul>
+
+		<li><a href='".$DOMAIN."/index.php' "; if($PageName=="index.php"){echo "class='selected'";} echo ">About Me</a></li>
+		<li><a href='".$DOMAIN."/work.php' "; if($PageName=="work.php"){echo "class='selected'";} echo ">Portfolio</a></li>
+		<li><a href='".$DOMAIN."/resources.php' "; if($PageName=="resources.php"){echo "class='selected'";} echo ">Arduino</a></li>
+		<li><a href='".$DOMAIN."/thesis.php' "; if($PageName=="thesis.php"){echo "class='selected'";} echo ">Mathematics</a></li>
+		<li><a href='".$DOMAIN."/contact.php' "; if($PageName=="contact.php"){echo "class='selected'";} echo ">Contact Me</a></li>
+		
+		
+		
+		
+
+
+		</ul>
+	</div>
+</div>
+
 <!--<div style='height:30px;'></div>-->
 <div class='contentBody'>";
 
