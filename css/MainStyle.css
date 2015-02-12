@@ -1,0 +1,214 @@
+#ContactSuccessful{
+border-radius: 5px;
+padding:10px;
+text-align:center;
+width:100%;
+background:#D3FFBF;
+}
+
+#ContactError{
+border-radius: 5px;
+padding:10px;
+text-align:center;
+width:100%;
+background:#FF7C7C;
+}
+
+#ContactForm label{
+    margin-top:5px;
+    display:block;
+}
+
+#ContactName, #ContactEmail{
+    height:27px;
+}
+
+#ContactMessage {
+    height:213px;
+}
+
+
+#ContactName, #ContactEmail, #ContactMessage {
+    width:100%;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+#ContactName:focus, #ContactEmail:focus, #ContactMessage:focus {
+    border:1px solid #97d6eb;
+}
+
+#ContactSubmit{
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:15px;
+	border : solid 1px #000000;
+	border-radius : 3px;
+	moz-border-radius : 3px;
+	-webkit-box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	-moz-box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	color : #ffffff;
+	padding : 1px 17px;
+	background : #5f6166;
+	background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5f6166), color-stop(100%,#00060a));
+	background : -moz-linear-gradient(top, #5f6166 0%, #00060a 100%);
+	background : -webkit-linear-gradient(top, #5f6166 0%, #00060a 100%);
+	background : -o-linear-gradient(top, #5f6166 0%, #00060a 100%);
+	background : -ms-linear-gradient(top, #5f6166 0%, #00060a 100%);
+	background : linear-gradient(top, #5f6166 0%, #00060a 100%);
+	filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f6166', endColorstr='#00060a',GradientType=0 );
+	display: block;
+}
+
+
+#ContactSubmit:hover {
+    opacity:.9;
+}
+
+
+
+
+
+div.PortfolioDiv{ 
+	width:100%;
+} 
+
+div.InsidePortfolioDiv{ 
+padding: 60px;
+width:1000px;
+margin-right:auto;
+margin-left:auto;
+} 
+ 
+div.Colour1{ /*deep cream*/
+background: #FFFAE8;
+}
+
+div.Colour2{
+background:white;
+}
+
+
+h1.PortfolioH1{
+	text-align: center;
+	margin: 5px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+h2.PortfolioH2{
+	text-align: center;
+	margin: 0px;
+	font-size: 21px;
+	font-weight: normal;
+}
+
+h2.PortfolioH2-2{
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 0px;
+	font-size: 21px;
+	font-weight: normal;
+}
+
+p.PortfolioP{
+	text-align: left;
+}
+
+ 
+p.portfolioclass{
+width:100%;
+float:left;
+font-size:20px;
+font-weight:bold;
+}
+
+.underlinemenu{
+font-weight: bold;
+width: 100%;
+/*position: fixed;
+top: 0px;
+left: 0px;
+*/
+z-index: 10000;
+background: #0B4168;
+background-image:url('../Resources/back.png');
+background-repeat: repeat-x;
+height:40px;
+}
+ /*C1E4FF*/
+.underlinemenu ul{
+padding: 6px 10px 7px 10px; /*6px should equal top padding of "ul li a" below, 7px should equal bottom padding + bottom border of "ul li a" below*/
+margin: 0;
+text-align: center; /*set value to "left", "center", or "right"*/
+list-style-type : none;
+}
+ 
+.underlinemenu ul li{
+display: inline;
+float:right;
+width:20%;
+}
+
+.underlinemenu ul li.Logo{
+display: inline;
+float:left;
+}
+ 
+.underlinemenu ul li a{
+color: white;/*#494949;*/
+padding: 6px 3px 4px 3px; /*top padding is 6px, bottom padding is 4px*/
+margin-right: 0px; /*spacing between each menu link*/
+text-decoration: none;
+width: 100%;
+display: block;
+border-bottom: 3px solid transparent; /*bottom border is 3px*/
+}
+ 
+.underlinemenu ul li a:hover, .underlinemenu ul li a:hover.selected{
+border-bottom-color: white;
+}
+
+.underlinemenu ul li a.selected{
+border-bottom-color: #70C5FF;
+}
+
+body{
+/*background:#E0ECF8;*/
+margin:0px;
+}
+
+
+.centerBody {
+width: 100%;
+margin-right:auto;
+margin-left:auto;
+
+}
+
+.contentBody{
+
+}
+
+td.portfolio1{
+	vertical-align:top;
+	padding:20px;
+	
+}
+
+td.portfolio2{
+	padding-left:20px;
+	vertical-align:top;
+	padding-bottom:20px;
+	
+}
+

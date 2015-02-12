@@ -1,0 +1,17 @@
+RewriteEngine on
+Options +FollowSymlinks
+Options -Indexes 
+
+RewriteRule ^(.*)\.[\d]{10}\.(css|js)$ $1.$2 [L]
+
+
+
+RewriteRule ^Arduino/$ /resources.php [L,R=301]
+
+RewriteRule ^resources/$ /resources.php [L]
+RewriteRule ^Resources/$ /resources.php [L]
+
+RewriteRule ^NAS/$ /NAS/index.php [L]
+
+RewriteCond %{http_host} ^www\.thomaspreece\.com [NC]
+RewriteRule ^(.*)$ http://thomaspreece.com/$1 [R=301,NC]
