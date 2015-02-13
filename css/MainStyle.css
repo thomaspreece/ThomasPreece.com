@@ -69,6 +69,14 @@ background:#FF7C7C;
 	display: block;
 }
 
+div.PortfolioPopup{
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:50px;
+	padding-top:25px;
+}
+
 img.HomeImage{
 	width:346px;
 }
@@ -173,29 +181,28 @@ z-index: 10000;
 background: #0B4168;
 background-image:url('../Resources/back.png');
 background-repeat: repeat-x;
-height:40px;
+height:60px;
 }
 
-.dropdownunderlinemenu div{
-	height: 40px;
-}
-
-.dropdownunderlinemenu div a.NavigationButton{
+.dropdownunderlinemenu a.NavigationButton{
 color: white;
-line-height: 40px;
+line-height: 60px;
 text-decoration: none;
 width: 100%;
-display: block;
+display: inline-block;
 text-align: center; 
+font-size: 20px;
 }
 
 
-.dropdownunderlinemenu div:hover ul{
-	display: inline;
+.dropdownunderlinemenu:hover ul{
+	display: block;
+	position: relative;
+	top:0px;
 }
 
-.dropdownunderlinemenu div:hover a.NavigationButton{
-	display: none;
+.dropdownunderlinemenu:hover a.NavigationButton{
+
 }
 
 
@@ -204,7 +211,9 @@ margin: 0;
 width: 100%;
 text-align: center; /*set value to "left", "center", or "right"*/
 list-style-type : none;
-display:none;
+padding:0px;
+display: none;
+
 }
  
 .dropdownunderlinemenu ul li{
