@@ -150,7 +150,9 @@ Echo "</head>
 </div>
 
 <div class='dropdownunderlinemenu'>
-	<a class='NavigationButton' href='#'>Navigation</a>
+	<img style='height:30px;margin:15px;position:absolute;right:0px;' src='".$DOMAIN."/Resources/MenuIcon.png' />
+	<a class='NavigationButton' href='#'>".$Title."</a>
+	
 		<ul>
 
 		<li><a href='".$DOMAIN."/index.php' "; if($PageName=="index.php"){echo "class='selected'";} echo ">About Me</a></li>

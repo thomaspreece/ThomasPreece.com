@@ -73,7 +73,7 @@ div.PortfolioPopup{
 	max-width:1000px;
 	margin-left:auto;
 	margin-right:auto;
-	padding:50px;
+	padding:10px;
 	padding-top:25px;
 }
 
@@ -94,6 +94,7 @@ div.HomeImageCaption{
 	font-size: 13px;
 	text-align: center;
 	margin-top: 3px;
+	max-width:346px;
 }
 
 #ContactSubmit:hover {
@@ -171,6 +172,7 @@ font-weight:bold;
 
 
 .dropdownunderlinemenu{
+display: none;
 font-weight: bold;
 width: 100%;
 /*position: fixed;

@@ -3,6 +3,7 @@
 $MetaDescription="This website is about Thomas Preece, a graduate in Mathematics who produces bespoke programming and design work. This page gives details about his Scholarly Report on Data Compression and also a download link. It also contains various pieces of Matlab code that are linked to image compression.";
 $MetaKeywords="thomas,preece,mathematics,data,compression,thesis,report,matlab";
 $MetaTitle="Mathematics - ThomasPreece.com";
+$Title="Mathematics";
 $PageName="thesis.php";
 include("includes/Header.php");
 

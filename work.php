@@ -3,6 +3,7 @@
 $MetaDescription="This website is about Thomas Preece, a graduate in Mathematics who produces bespoke programming and design work. This page shows you previous work that he has made for various clients.";
 $MetaKeywords="thomas,preece,technology,volunteers,A4S,scratch,arduino,software,development,design,websites";
 $MetaTitle="Portfolio - ThomasPreece.com";
+$Title="Portfolio";
 $PageName="work.php";
 include("includes/Header.php");
 

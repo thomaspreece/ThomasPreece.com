@@ -3,6 +3,7 @@
 $MetaDescription="This website is about Thomas Preece, a graduate in Mathematics who produces bespoke programming and design work. The following page gives links to various resources for Arduino produced by Thomas Preece for the Technology Volunteers. Including A4S a Scratch and Arduino interfacing software.";
 $MetaKeywords="thomas,preece,technology,volunteers,A4S,scratch,arduino,software,handouts,worksheets";
 $MetaTitle="Resources - ThomasPreece.com";
+$Title="Arduino";
 $PageName="resources.php";
 include("includes/Header.php");
 
