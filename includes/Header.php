@@ -18,6 +18,7 @@ Echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://
 <head>
 <meta name=\"Description\" content=\"".$MetaDescription."\" />
 <meta name=\"Keywords\" content=\"".$MetaKeywords."\" />
+<meta name=\"viewport\" content=\"width=device-width\" />
 <meta http-equiv=\"content-language\" content=\"en-US\" />
 <title>".$MetaTitle."</title>
 ";
@@ -59,7 +60,7 @@ function ResizeUpdater(){
 		$('.HomeImage').css({ 'width': '346px' }); 	
 	}
 	
-	if(cw2 < 400){
+	if(cw2 < 500){
 		$('.underlinemenu').css({ 'display': 'none' }); 
 		$('.dropdownunderlinemenu').css({ 'display': 'block' }); 
 	}else{
@@ -149,7 +150,7 @@ Echo "</head>
 </div>
 
 <div class='dropdownunderlinemenu'>
-	<div style='width:100%;height:100%'><a class='NavigationButton' href='#'>Navigation</a>
+	<a class='NavigationButton' href='#'>Navigation</a>
 		<ul>
 
 		<li><a href='".$DOMAIN."/index.php' "; if($PageName=="index.php"){echo "class='selected'";} echo ">About Me</a></li>
@@ -164,7 +165,7 @@ Echo "</head>
 
 
 		</ul>
-	</div>
+	
 </div>
 
 <!--<div style='height:30px;'></div>-->

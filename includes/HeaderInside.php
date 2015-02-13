@@ -1,5 +1,5 @@
 <?php
-$DOMAIN="http://thomaspreece.com";
+$DOMAIN="http://127.0.0.1/ThomasPreece.com";
 
 
 function auto_version($file)

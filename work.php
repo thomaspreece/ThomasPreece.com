@@ -15,7 +15,7 @@ include("includes/Header.php");
 		<p class='PortfolioP'>Over the years I have programmed in many different languages and produced various bespoke programs for clients. Below are the programs I work on in my spare time. My best single piece of software is Photon GameManager which has a small but happy base of users many of whom have complemented me on how wonderful the software is. Place your mouse over the tiles to view more about each piece of software and click on the tile to view even more information.</p>
 		<div class='PortfolioTilesContainer'>
 			<div class='mosaic-block fadeMosaic'>
-				<a style='text-decoration:none;' onclick="$.nmManual('/portfolio/photon-soft.php',{ sizes: { minW: $(window).width()*0.8, minH: $(window).height()*0.8} });" class='mosaic-overlay'>
+				<a style='text-decoration:none;' onclick="$.nmManual('portfolio/photon-soft.php',{ sizes: { minW: Math.min($(window).width()*0.8,1100), minH: $(window).height()*0.8} });" class='mosaic-overlay'>
 					<div class='mosaicdetails'>
 						<h4>Photon GameManager</h4>
 						<p>Game Manager is an advanced game launcher that is designed to have as many useful game related features as possible. It has been through many revisions and currently is on version 4. </p><p style='text-align:center;'><br/><br/>Click for more information</p>
